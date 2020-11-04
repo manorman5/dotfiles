@@ -1,5 +1,6 @@
 #! /bin/bash
 
+#testing
 DIR=$(cd `dirname $0` && pwd)
 
 # create symlinks
