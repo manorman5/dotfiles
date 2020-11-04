@@ -3,8 +3,11 @@
 DIR=$(cd `dirname $0` && pwd)
 
 # create symlinks
-ln -sf $DIR/bash/bashrc ~/.bashrc
-ln -sf $DIR/bash/bash_profile ~/.bash_profile
+
+for f in $DIR/bash/*
+do
+    ls -sf $f ~/.$(basename $f)
+done
 ln -sf $DIR/vim/vimrc ~/.vimrc
 
 
